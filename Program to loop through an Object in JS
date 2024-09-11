@@ -1,0 +1,11 @@
+const person = {
+    name: "Rakesh",
+    age: 25,
+    profession: "Developer",
+    skills: ["Android", "Nodejs", "React"]
+};
+for (let key in person) {
+    if (person.hasOwnProperty(key)) {
+        console.log(`${key}: ${person[key]}`);
+    }
+}
