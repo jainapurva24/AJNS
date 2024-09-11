@@ -1,0 +1,7 @@
+let students = [
+    { name: "Bajirav", surname: "Singham" },
+    { name: "Bob", surname: "Johnson" },
+
+];
+let fullNames = students.map(student => `${student.name} ${student.surname}`);
+console.log('Full names of students:', fullNames);
