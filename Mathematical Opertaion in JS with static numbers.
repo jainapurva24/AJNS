@@ -1,0 +1,10 @@
+let number1 = 20;
+let number2 = 4;
+var sum = number1 + number2;
+var difference = number1 - number2;
+var product = number1 * number2;
+var quotient = number1 / number2;
+console.log("The sum is: " + sum);
+console.log("The difference is: " + difference);
+console.log("The product is: " + product);
+console.log("The quotient is: " + quotient);
