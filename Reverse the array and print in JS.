@@ -1,0 +1,7 @@
+let numbers = Array.from({ length: 20 }, (_, i) => i + 1);
+let reversedNumbers = numbers.reverse();
+let valueAtIndex12 = reversedNumbers[12];
+let indexOfLastElement = reversedNumbers.length - 1;
+console.log('Reversed Array:', reversedNumbers);
+console.log('Value at index 12:', valueAtIndex12);
+console.log('Index of the last element:', indexOfLastElement);
