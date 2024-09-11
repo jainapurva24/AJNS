@@ -1,0 +1,30 @@
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+function calculate(n1, n2, op) {
+    switch (op) {
+        case '+':
+            return n1 + n2;
+        case '-':
+            return n1 - n2;
+        case '*':
+            return n1 * n2;
+        case '/':
+            return n2 !== 0 ? n1 / n2 : 'Error: Division by zero';
+        default:
+            return 'Error: Invalid operator';
+    }
+}
+rl.question('Enter the first number: ', (firstNumber) => {
+    rl.question('Enter the second number: ', (secondNumber) => {
+        rl.question('Enter the operator (+, -, *, /): ', (op) => {
+            let n1 = parseFloat(firstNumber);
+            let n2 = parseFloat(secondNumber);
+            let result = calculate(n1, n2, op);
+            console.log(`Result: ${result}`);
+            rl.close();
+        });
+    });
+});
