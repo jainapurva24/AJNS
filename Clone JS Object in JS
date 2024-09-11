@@ -1,0 +1,8 @@
+const originalObject = {
+    name: "Rakesh",
+    age: 25,
+    skills: ["Android", "Nodejs", "React"]
+};
+const clonedObject = { ...originalObject };
+console.log("Original Object:", originalObject);
+console.log("Cloned Object:", clonedObject);
