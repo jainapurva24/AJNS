@@ -1,0 +1,4 @@
+var number1 = 10;
+let number2 = 20;
+let result = number1 + number2;
+console.log('The result of adding', number1, 'and', number2, 'is:', result);
