@@ -1,0 +1,10 @@
+function sortWordsAlphabetically(input) {
+    const wordsArray = input.split(' ');
+    wordsArray.sort();
+    const sortedWords = wordsArray.join(' ');
+    return sortedWords;
+}
+const inputString = "cow owl bat kite ant";
+const sortedString = sortWordsAlphabetically(inputString);
+console.log(`Original String: ${inputString}`);
+console.log(`Sorted String: ${sortedString}`);
