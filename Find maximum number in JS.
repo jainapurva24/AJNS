@@ -1,0 +1,5 @@
+let number1 = 45;
+let number2 = 78;
+let number3 = 32;
+let maxNumber = Math.max(number1, number2, number3);
+console.log("The maximum number is: " + maxNumber);
