@@ -1,0 +1,40 @@
+import logo from './logo.svg';
+import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const workers = [
+    { worker_name: "sai", dept: "HR", salary: 10000 },
+    { worker_name: "sai", dept: "HR", salary: 20000 },
+    { worker_name: "sai", dept: "HR", salary: 30000 },
+    { worker_name: "sai", dept: "HR", salary: 40000 },
+    { worker_name: "sai", dept: "HR", salary: 50000 }
+];
+
+function App() {
+    return (
+        <div className="container mt-5">
+            <h2 className="mb-4">Workers Table</h2>
+            <table className="table table-bordered table-striped table-hover">
+                <thead className="thead-dark">
+                    <tr>
+                        <th>Worker Name</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {workers.map((worker, index) => (
+                        <tr key={index}>
+                            <td>{worker.worker_name}</td>
+                            <td>{worker.dept}</td>
+                            <td>{worker.salary}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+    );
+}
+
+export default App;
