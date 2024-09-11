@@ -1,0 +1,12 @@
+//file 1 code:
+
+export const greeting = "Hello, world!";
+export function greet() {
+console.log(greeting);
+}
+
+//file 2 code:
+
+import { greeting, greet } from './file1.js';
+console.log(greeting);
+greet(); 
