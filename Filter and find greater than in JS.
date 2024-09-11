@@ -1,0 +1,9 @@
+let employees = [
+    { name: "Alice", salary: 25000 },
+    { name: "Bob", salary: 18000 },
+    { name: "Charlie", salary: 22000 },
+    { name: "David", salary: 30000 },
+    { name: "Eve", salary: 19000 }
+];
+let highSalaryEmployees = employees.filter(employee => employee.salary > 20000);
+console.log('Employees with salary greater than 20000:', highSalaryEmployees);
